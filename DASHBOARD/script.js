@@ -41,6 +41,13 @@ window.onload = () => {
   initCharts();
 };
 
+const sidebar = document.querySelector('.sidebar');
+const toggleBtn = document.getElementById('sidebarToggle');
+
+toggleBtn.addEventListener('click', () => {
+  sidebar.classList.toggle('closed');
+});
+
 // Fungsi search engine sederhana
 function searchTable() {
   const input = document.getElementById("searchInput").value.toUpperCase();
